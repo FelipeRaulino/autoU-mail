@@ -174,12 +174,11 @@ const CustomForm = () => {
                     onClick={() =>
                       document.getElementById('fileInput')?.click()
                     }
-                    className='flex flex-col gap-2 items-center max-w-[250px] bg-[#272727] border border-[#737373] py-4 rounded-[5px] border-dashed'
+                    className='flex flex-col gap-4 items-center max-w-[250px] bg-[#272727] border border-[#737373] py-4 rounded-[5px] border-dashed'
                   >
                     <p className='text-white font-inter text-sm'>
-                      Arraste seu arquivo para cá
+                      Clique aqui para
                     </p>
-                    <span className='text-white font-inter text-sm'>ou</span>
                     <span className='font-inter text-sm px-4 py-2 border border-[#FEA006] rounded-[5px] text-[#FEA006]'>
                       Procurar arquivo
                     </span>
