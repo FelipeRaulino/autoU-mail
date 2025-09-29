@@ -8,6 +8,7 @@ requests==2.32.5
 httpx==0.28.1
 starlette==0.48.0
 aiofiles==24.1.0
+PyMuPDF==1.26.4
 
 # If you use Supabase
 supabase==2.20.0
