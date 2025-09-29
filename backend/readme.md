@@ -1,54 +1,64 @@
-📩 Backend de Classificação de Emails
+## 📩 Backend de Classificação de Emails
 
 Bem-vindo(a)! Este backend foi desenvolvido para classificar emails como Produtivos ou Improdutivos, sugerir respostas automáticas e armazenar os registros em um banco de dados no Supabase.
 
-🚀 Funcionalidades
+### 🚀 Funcionalidades
 
 Este backend possui duas rotas principais:
 
-POST /v1/classify
-Recebe emails (texto e/ou arquivos anexos), classifica-os como Produtivo ou Improdutivo, sugere uma resposta automática e salva o registro no banco.
+- `POST /v1/classify`
 
-GET /v1/history
-Retorna todos os emails já armazenados no banco de dados.
+  Recebe emails (texto e/ou arquivos anexos), classifica-os como Produtivo ou Improdutivo, sugere uma resposta automática e salva o registro no banco.
 
-📊 Critérios de Classificação
+- `GET /v1/history`
 
-Produtivo
-Emails que requerem uma ação ou resposta específica.
-Exemplos: solicitações de suporte técnico, dúvidas sobre o sistema, atualização de casos em aberto.
+  Retorna todos os emails já armazenados no banco de dados.
 
-Improdutivo
-Emails que não demandam ação imediata.
-Exemplos: mensagens de agradecimento, felicitações.
+## 📊 Critérios de Classificação
 
-⚙️ Pré-requisitos
+- **Produtivo**
+
+  Emails que requerem uma ação ou resposta específica.
+
+  **_Exemplos_**: solicitações de suporte técnico, dúvidas sobre o sistema, atualização de casos em aberto.
+
+- **Improdutivo**
+
+  Emails que não demandam ação imediata.
+
+  **_Exemplos_**: mensagens de agradecimento, felicitações.
+
+## ⚙️ Pré-requisitos
 
 Antes de rodar o projeto, certifique-se de ter:
 
-Uma conta no Supabase
-e um projeto configurado.
+1. Uma conta no [Supabase](https://supabase.com/) e um projeto configurado.
 
-Uma conta no Hugging Face
-para acessar modelos de IA.
+2. Uma conta no [Hugging Face](https://huggingface.co/) para acessar modelos de IA.
 
-🔑 Variáveis de Ambiente
+## 🔑 Variáveis de Ambiente
 
-Crie um arquivo .env na raiz do projeto e preencha com suas credenciais:
+Crie um arquivo `.env` na raiz do projeto e preencha com suas credenciais:
 
-HF_TOKEN=seu_token_huggingface
-SUPABASE_URL=sua_url_supabase
-SUPABASE_KEY=sua_chave_supabase
+```
+  HF_TOKEN=seu_token_huggingface
+  SUPABASE_URL=sua_url_supabase
+  SUPABASE_KEY=sua_chave_supabase
+```
 
-🛠️ Instalação e Execução
+## 🛠️ Instalação e Execução
 
 Clone o repositório e instale as dependências:
 
-pip install -r requirements.txt
+```
+  pip install -r requirements.txt
+```
 
-Execute o servidor com Uvicorn:
+Execute o servidor com **Uvicorn**:
 
-uvicorn main:app --host 0.0.0.0 --port 8000
+```
+  uvicorn main:app --host 0.0.0.0 --port 8000
+```
 
 O backend estará disponível em:
-👉 http://localhost:8000
+👉 _http://localhost:8000_
