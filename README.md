@@ -14,6 +14,8 @@ A aplicação está disponível online em: https://auto-u-mail-tawny.vercel.app/
 
 Você também pode conferir uma demo em vídeo das funcionalidades da aplicação abaixo:
 
+[Vídeo](https://drive.google.com/file/d/19nyP2WI7JY7KO1mKq5SsF-RCmcstBsEK/view?usp=sharing)
+
 ## 📚 Instruções de Execução
 
 Para rodar a aplicação localmente, consulte os READMEs específicos:
